@@ -28,7 +28,7 @@ const Pokemon = ({ id }: PokemonProps) => {
           <CardHeader>
             <CardTitle>{data.name.charAt(0).toUpperCase() + data.name.slice(1)}</CardTitle>
             <CardDescription>
-                #{data.id}
+                #{data.id.toString().padStart(4, '0')}
             </CardDescription>
           </CardHeader>
           <CardContent className="flex justify-center">
